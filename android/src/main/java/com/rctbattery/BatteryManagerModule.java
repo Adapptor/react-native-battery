@@ -115,7 +115,8 @@ public class BatteryManagerModule extends ReactContextBaseJavaModule {
     }
     @Override
     public void onHostPause() {
-      maybeUnregisterReceiver();
+      // Continue to update battery status from the background
+      // maybeUnregisterReceiver();
       }
     @Override
     public void onHostDestroy() {
